@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-wrapper #26a69a teal lighten-1">
+            <a href="#" class="brand-logo left">Caronu</a>
+            <ul id="nav-mobile" class="right">
+                <li><a class="modal-trigger" href="#modal1">signin</a></li>
+                <li><a class="modal-trigger" href="#modal2">signup</a></li>
+                <li><a class="modal-trigger" href="#">logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>signin</h4>
+            <input type="email" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Password">
+            <button type="submit"class=" waves-effect-btn">submit</button>
+        </div>
+       
+    </div>
+
+   
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <h4>signup</h4>
+            <input type="email" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Password">
+           <button type="submit"class=" waves-effect-btn">submit</button>
+        </div>
+       
+        
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems);
+        });
+    </script>
+</body>
+</html>
